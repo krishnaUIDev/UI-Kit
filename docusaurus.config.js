@@ -21,7 +21,7 @@ module.exports = {
       hideOnScroll: false,
       // title: 'Runlet',
       logo: {
-        alt: 'Runlet Logo',
+        alt: 'UI Kit Logo',
         src: 'img/logo.svg',
       },
       links: [
@@ -33,7 +33,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/runletapp/runlet',
+          href: 'https://github.com/krishnaUIDev/UI-Kit',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub Repository',
@@ -41,9 +41,10 @@ module.exports = {
       ],
     },
     footer: {
+      style: 'dark',
       links: [
         {
-          title: 'Runlet',
+          title: 'UI-Kit',
           items: [
             {
               label: 'FAQ',
@@ -72,7 +73,7 @@ module.exports = {
             },
             {
               label: 'Releases',
-              href: 'https://github.com/runletapp/runlet/releases',
+              href: 'https://github.com/krishnaUIDev/UI-Kit/releases',
             },
           ],
         },
@@ -81,16 +82,28 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/runletapp/runlet',
+              href: 'https://github.com/krishnaUIDev/UI-Kit',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/runletapp',
+              href: 'https://github.com/krishnaUIDev/UI-Kit',
+            },
+            {
+              html: `
+                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+                </a>
+              `,
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Runlet. All rights reserved.`,
+      logo: {
+        alt: 'UI Kit',
+        src: 'img/logo.svg',
+        href: 'https://google.com',
+      },
+      copyright: `Created with  &#x2764; by Krishna`,
     },
     googleAnalytics: {
       trackingID: 'UA-132764481-1',
@@ -108,14 +121,12 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
           homePageId: 'getting-started',
           sidebarPath: require.resolve('./sidebars.js'),
-          // editUrl: 'https://github.com/runletapp/docusaurus/edit/master/',
         },
         blog: {
           showReadingTime: true,
-          // editUrl: 'https://github.com/runletapp/docusaurus/edit/master/',
+          editUrl: 'https://github.com/krishnaUIDev/UI-Kit',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
