@@ -105,7 +105,7 @@ module.exports = {
       copyright: `Created with  &#x2764; by Krishna`,
     },
     googleAnalytics: {
-      trackingID: '240317700',
+      trackingID: 'G-HRNTMWVXH9',
       anonymizeIP: true, // Should IPs be anonymized?
     },
     algolia: {
