@@ -39,9 +39,8 @@ const Blog = () => {
       })
       .catch((err) => console.log(err));
   }, []);
-  console.log(posts, '--');
   return (
-    <section id="blog">
+    <section className={styles.features} id="blog">
       <div className="container">
         <Headline
           category="Blog"
