@@ -28,23 +28,5 @@ module.exports = {
         'reactJS/extra',
       ],
     },
-    {
-      type: 'category',
-      label: 'Jobs',
-      collapsed: false,
-      items: [
-        'job/definition',
-        'job/device_assignment',
-        'job/arguments',
-        'job/scheduling',
-        'job/settings',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Policies',
-      collapsed: false,
-      items: ['policies/terms', 'policies/privacy'],
-    },
   ],
 };

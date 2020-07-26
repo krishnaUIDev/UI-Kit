@@ -1,7 +1,7 @@
 ---
 id: extra
-title: 'extra'
-sidebar_label: 'extra'
+title: 'Extra'
+sidebar_label: 'Extra'
 ---
 
 ### What is reselect and how it works?
