@@ -42,7 +42,6 @@ function icon(type) {
 function Download() {
   const {data} = useLatestRelease();
   const size = 36;
-
   return (
     <section id="download">
       <div className="container">

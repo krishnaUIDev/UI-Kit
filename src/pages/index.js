@@ -7,6 +7,7 @@ import Features from '@theme/Features';
 import Hero from '@theme/Hero';
 import Resources from '@theme/Resources';
 import Download from '@theme/Download';
+import Blog from '@theme/Blog';
 import OptinChat from '@theme/OptinChat';
 import styles from './styles.module.scss';
 
@@ -21,7 +22,8 @@ function Home() {
 
       <main className={styles.main}>
         <Features />
-        <Download />
+        {/* <Download /> */}
+        <Blog />
         <Resources />
         <FAQ />
         <OptinChat />
