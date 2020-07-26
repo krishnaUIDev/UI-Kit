@@ -26,7 +26,7 @@ function Home() {
         <Blog />
         <Resources />
         <FAQ />
-        <OptinChat />
+        {/* <OptinChat /> */}
       </main>
     </Layout>
   );
