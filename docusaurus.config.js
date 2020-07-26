@@ -19,7 +19,6 @@ module.exports = {
     image: 'img/runlet.png',
     navbar: {
       hideOnScroll: false,
-      // title: 'Runlet',
       logo: {
         alt: 'UI Kit Logo',
         src: 'img/logo.svg',
