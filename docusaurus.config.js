@@ -1,7 +1,7 @@
 module.exports = {
   title: 'UI-WebKit',
   tagline: 'Contains JS Framework related material',
-  url: 'https://UI-WebKit.github.io',
+  url: 'https://ui-kit.netlify.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'CyberCombat',
