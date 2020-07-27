@@ -7,6 +7,7 @@ import Image from '@theme/IdealImage';
 
 import styles from './styles.module.scss';
 import screenshot from '../../../static/img/pages/light/homepage-screenshot.png';
+import {BsLaptop} from 'react-icons/bs';
 
 function Hero() {
   const context = useDocusaurusContext();
@@ -15,12 +16,7 @@ function Hero() {
   return (
     <header id="hero" className={clsx('hero', styles.banner)}>
       <div className="container">
-        <img
-          src={useBaseUrl(`img/logo.svg`)}
-          alt="Logo"
-          className={styles.logo}
-        />
-
+        <BsLaptop size="48" className={styles.logo} />
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className={clsx('hero__subtitle', styles.subtitle)}>
           {siteConfig.tagline}

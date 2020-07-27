@@ -44,7 +44,7 @@ const Blog = () => {
       <div className="container">
         <Headline
           category="Blog"
-          title="Latest New From Our Blog!"
+          title="Latest News From Our Blog!"
           offset={1}
         />
         <div className="row">
