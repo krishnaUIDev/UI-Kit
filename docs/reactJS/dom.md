@@ -16,15 +16,15 @@ The _Virtual DOM_ (VDOM) is an in-memory representation of _Real DOM_. The repre
 
 1.  Whenever any underlying data changes, the entire UI is re-rendered in Virtual DOM representation.
 
-    ![vdom](vdom1.png)
+    <img alt="Docusaurus " src={require('@docusaurus/useBaseUrl').default('img/vdom1.png')} />
 
 2.  Then the difference between the previous DOM representation and the new one is calculated.
 
-    ![vdom2](vdom2.png)
+    <img alt="Docusaurus " src={require('@docusaurus/useBaseUrl').default('img/vdom2.png')} />
 
 3.  Once the calculations are done, the real DOM will be updated with only the things that have actually changed.
 
-    ![vdom3](vdom3.png)
+    <img alt="Docusaurus " src={require('@docusaurus/useBaseUrl').default('img/vdom3.png')} />
 
 ---
 
