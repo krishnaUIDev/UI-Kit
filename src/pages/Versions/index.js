@@ -6,9 +6,15 @@ const Versions = () => {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
   const {tagline} = siteConfig;
+  const imageStyles = {
+    maxWidth: '60%',
+    maxHeight: '385px',
+    display: 'flex',
+    margin: 'auto',
+  };
   return (
     <Layout description={tagline}>
-      <div>Release notes goes here</div>
+      <img src="../../../static/img/404.svg" style={imageStyles} />
     </Layout>
   );
 };

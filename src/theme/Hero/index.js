@@ -3,10 +3,8 @@ import clsx from 'clsx';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Image from '@theme/IdealImage';
-
+//import Image from '@theme/IdealImage';
 import styles from './styles.module.scss';
-import screenshot from '../../../static/img/pages/light/homepage-screenshot.png';
 import {BsLaptop} from 'react-icons/bs';
 
 function Hero() {
@@ -35,9 +33,8 @@ function Hero() {
           </AnchorLink>
         </div>
       </div>
-
-      <Image
-        img={screenshot}
+      <img
+        src="../../../static/img/development.svg"
         alt="Screenshot"
         className={clsx('shadow-md', styles.image)}
       />
