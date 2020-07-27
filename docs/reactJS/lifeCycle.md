@@ -24,11 +24,11 @@ sidebar_label: 'Component life Cycle'
 
 React 16.3+ Phases (or an [interactive version](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/))
 
-    <img alt="Docusaurus " src={require('@docusaurus/useBaseUrl').default('img/phases16.3.png')} />
+<img alt="Docusaurus " src={require('@docusaurus/useBaseUrl').default('img/phases16.3.png')} />
 
 Before React 16.3
 
-    <img alt="Docusaurus " src={require('@docusaurus/useBaseUrl').default('img/phases.png')} />
+<img alt="Docusaurus " src={require('@docusaurus/useBaseUrl').default('img/phases.png')} />
 
 ---
 
