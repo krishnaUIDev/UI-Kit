@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-//import Image from '@theme/IdealImage';
+import Image from '../../../static/img/development.svg';
 import styles from './styles.module.scss';
 import {BsLaptop} from 'react-icons/bs';
 
@@ -34,7 +34,7 @@ function Hero() {
         </div>
       </div>
       <img
-        src="../../../static/img/development.svg"
+        src={Image}
         alt="Screenshot"
         className={clsx('shadow-md', styles.image)}
       />
