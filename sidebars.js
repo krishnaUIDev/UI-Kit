@@ -7,7 +7,7 @@ module.exports = {
     {
       type: 'category',
       label: 'ReactJS',
-      collapsed: false,
+      collapsed: true,
       items: [
         'reactJS/about',
         'reactJS/jsx',
@@ -27,6 +27,12 @@ module.exports = {
         'reactJS/redux',
         'reactJS/extra',
       ],
+    },
+    {
+      type: 'category',
+      label: 'Git',
+      collapsed: false,
+      items: ['git/git', 'git/gitignore', 'git/gitcommands'],
     },
   ],
 };
