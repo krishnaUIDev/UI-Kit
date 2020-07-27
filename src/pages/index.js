@@ -28,12 +28,14 @@ function Home() {
         <FAQ />
         {/* <OptinChat /> */}
       </main>
-      <AnchorLink className={styles.scrollup} href="#hero">
-        <img
-          src="https://assets.website-files.com/5a8fbae21dcd8f00012c1c4d/5a92c2098433cb00017f9f97_arrow-up-icon.svg"
-          alt=""
-        />
-      </AnchorLink>
+      <div style={{position: 'relative'}}>
+        <AnchorLink className={styles.scrollup} href="#hero">
+          <img
+            src="https://assets.website-files.com/5a8fbae21dcd8f00012c1c4d/5a92c2098433cb00017f9f97_arrow-up-icon.svg"
+            alt=""
+          />
+        </AnchorLink>
+      </div>
     </Layout>
   );
 }
