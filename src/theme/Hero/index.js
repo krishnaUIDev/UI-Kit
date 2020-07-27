@@ -34,7 +34,7 @@ function Hero() {
         </div>
       </div>
       <img
-        src={Image}
+        src="../../../static/img/dev.png"
         alt="Screenshot"
         className={clsx('shadow-md', styles.image)}
       />
