@@ -17,47 +17,29 @@ module.exports = {
       darkTheme: require('prism-react-renderer/themes/dracula'),
     },
     image: 'img/runlet.png',
-    // navbar: {
-    //   hideOnScroll: false,
-    //   title: 'UI-Kit',
-    //   logo: {
-    //     alt: 'UI Kit Logo',
-    //     src: 'img/logo.svg',
-    //     href: 'https://ui-webkit.netlify.app/', // Default to `siteConfig.baseUrl`.
-    //     target: '_self', //
-    //   },
-    //   items: [
-    //     {
-    //       to: '/docs',
-    //       activeBasePath: 'docs',
-    //       label: 'Docs',
-    //       position: 'left',
-    //     },
-    //     {to: '/blog', label: 'Blog', position: 'left'},
-    //     {to: '/Versions', label: 'All versions', position: 'right'},
-    //     {
-    //       href: 'https://github.com/krishnaUIDev/UI-Kit',
-    //       position: 'right',
-    //       className: 'header-github-link',
-    //       'aria-label': 'GitHub Repository',
-    //     },
-    //   ],
-    // },
     navbar: {
-      hideOnScroll: true,
-      title: 'Docusaurus',
+      hideOnScroll: false,
+      title: 'UI-Kit',
       logo: {
-        alt: 'Docusaurus Logo',
+        alt: 'UI Kit Logo',
         src: 'img/logo.svg',
+        href: 'https://ui-webkit.netlify.app/', // Default to `siteConfig.baseUrl`.
+        target: '_self', //
       },
       items: [
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {to: 'docs', label: 'Showcase', position: 'left'},
+        {
+          to: '/docs',
+          activeBasePath: 'docs',
+          label: 'Docs',
+          position: 'left',
+        },
+        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/Versions', label: 'All versions', position: 'right'},
         {
           href: 'https://github.com/krishnaUIDev/UI-Kit',
           position: 'right',
           className: 'header-github-link',
-          'aria-label': 'GitHub repository',
+          'aria-label': 'GitHub Repository',
         },
       ],
     },
