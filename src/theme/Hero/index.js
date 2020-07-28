@@ -34,7 +34,7 @@ function Hero() {
         </div>
       </div>
       <img
-        src="../../../static/img/dev.png"
+        src={useBaseUrl('img/404.svg')}
         alt="Screenshot"
         className={clsx('shadow-md', styles.image)}
       />
