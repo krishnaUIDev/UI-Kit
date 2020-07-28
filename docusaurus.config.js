@@ -30,7 +30,7 @@ module.exports = {
         {
           to: '/docs',
           activeBasePath: 'docs',
-          label: 'Introduction',
+          label: 'Docs',
           position: 'left',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
