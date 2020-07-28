@@ -8,7 +8,7 @@ const Versions = () => {
   const {siteConfig = {}} = context;
   const {tagline} = siteConfig;
   const imageStyles = {
-    maxWidth: '60%',
+    maxWidth: '38%',
     maxHeight: '385px',
     display: 'flex',
     margin: 'auto',
