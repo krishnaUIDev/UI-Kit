@@ -9,8 +9,8 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "commit": "git-cz",
-    "prettier": "prettier --config .prettierrc --write \"**/*.{js,ts}\"",
-    "prettier:diff": "prettier --config .prettierrc --list-different \"**/*.{js,ts}\"",
+    "prettier": "prettier --config .prettierrc --write \"**/*.{js,ts, tsx}\"",
+    "prettier:diff": "prettier --config .prettierrc --list-different \"**/*.{js,ts, tsx}\"",
     "prettier-docs": "prettier --config .prettierrc --write \"**/*.md\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

@@ -23,6 +23,8 @@ module.exports = {
       logo: {
         alt: 'UI Kit Logo',
         src: 'img/logo.svg',
+        href: 'https://ui-webkit.netlify.app/', // Default to `siteConfig.baseUrl`.
+        target: '_self', //
       },
       items: [
         {
