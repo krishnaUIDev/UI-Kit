@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const Versions = () => {
   const context = useDocusaurusContext();
@@ -14,7 +15,7 @@ const Versions = () => {
   };
   return (
     <Layout description={tagline}>
-      <img src="../../../static/img/404.svg" style={imageStyles} />
+      <img src={useBaseUrl('img/404.svg')} style={imageStyles} />
     </Layout>
   );
 };
