@@ -19,11 +19,12 @@ module.exports = {
     image: 'img/runlet.png',
     navbar: {
       hideOnScroll: false,
+      title: 'UI-Kit',
       logo: {
         alt: 'UI Kit Logo',
         src: 'img/logo.svg',
       },
-      links: [
+      items: [
         {
           to: 'docs',
           activeBasePath: 'docs',
@@ -52,11 +53,11 @@ module.exports = {
             },
             {
               label: 'Terms of Service',
-              to: 'docs/policies/terms',
+              to: 'docs/faq',
             },
             {
               label: 'Privacy Policy',
-              to: 'docs/policies/privacy',
+              to: 'docs/faq',
             },
           ],
         },
