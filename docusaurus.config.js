@@ -28,13 +28,13 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs',
+          to: '/docs',
           activeBasePath: 'docs',
           label: 'Introduction',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {to: 'Versions', label: 'All versions', position: 'right'},
+        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/Versions', label: 'All versions', position: 'right'},
         {
           href: 'https://github.com/krishnaUIDev/UI-Kit',
           position: 'right',
