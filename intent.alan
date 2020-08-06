@@ -1,0 +1,31 @@
+// Use this sample to create your own voice commands
+// intent('hello world', p=>  {
+//     p.play('(hello|hi there)');
+// });
+
+intent('Who are you?', 'Who is your creator?',
+       reply('This is allen, virtuval assistant for krishna'));
+
+intent('Whats your age?',
+       reply('I am 1month old. But i am too technical. Ask me anything related to front end'));
+
+intent('What does this app do?', 'What can I do here?',  'What you do?',
+       reply('This is a ui web Kit. Which helps front end developers to learn new Javascript frameworks'));
+
+let savedArticals = []
+// hit blog api
+
+intent('Give me the latest $(tech* (.*)) news', (p) => {
+    let NEWS_BLOG_API = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@KrishnaUIDev`;
+    
+    api.request(NEWS_BLOG_API, (error, response, body) => {
+        const { items } = JSON.parse(body);
+        if(!items.length){
+            p.play('Sorry, please try searching for tech new from a different source');
+            return;
+        }
+        savedArticals = items;
+        p.play({command: 'newTechNews', items});
+        p.play(`Here are the (latest|recent) ${p.tech.value} news`);
+    });
+})
