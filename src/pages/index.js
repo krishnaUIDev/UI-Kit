@@ -2,6 +2,8 @@ import React, {useEffect} from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import {useHistory, useLocation} from '@docusaurus/router';
 
 import FAQ from '@theme/FAQ';
 import Features from '@theme/Features';
@@ -19,8 +21,10 @@ function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
   const {tagline} = siteConfig;
-  useEffect(() => {
-    if (ExecutionEnvironment.canUseDOM) {
+  const history = useHistory();
+
+  if (ExecutionEnvironment.canUseDOM) {
+    useEffect(() => {
       const alanBtn = require('@alan-ai/alan-sdk-web');
       alanBtn({
         key: alanKey,
@@ -28,10 +32,17 @@ function Home() {
           if (command === 'newTechNews') {
             console.log(items, 'items');
           }
+          if (command === 'docs') {
+            history.push('docs/');
+            console.log(docs, 'docs');
+          }
+          if (command === 'top') {
+            history.push('#hero');
+          }
         },
       });
-    }
-  }, []);
+    }, []);
+  }
   return (
     <Layout description={tagline}>
       <Hero />
