@@ -4,7 +4,8 @@ title: 🦸🏻‍♂️ Javascript Questions
 sidebar_label: 'Javascript'
 ---
 
-<!-- import CB from '../../src/components/customText/customText.jsx';
+import CB from '../../src/components/customText/customText.jsx';
+
 import Collapsible from '../../src/components/collapsible/Collapsible.jsx';
 
 ### 🔸 Are semicolons required in JavaScript?
@@ -87,7 +88,7 @@ import Collapsible from '../../src/components/collapsible/Collapsible.jsx';
       </a>
     </p>
   </div>
-</Collapsible> -->
+</Collapsible>
 
 ### 🔸 What is a closure, and how/why would you use this?
 

@@ -1,7 +1,7 @@
 ---
 id: module9_promise
 title: Promises its super cool 😎
-sidebar_label: 'Module 9: Promise'
+sidebar_label: 'Promise'
 ---
 
 import Story from '../../../src/components/story/story.jsx'; import CustomText from '../../../src/components/customText/customText.jsx';

@@ -1,7 +1,7 @@
 ---
 id: module11_module
 title: Module
-sidebar_label: "Module 11: Module"
+sidebar_label: "Module"
 ---
 
 import CustomText from '../../../src/components/customText/customText.jsx';

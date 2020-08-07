@@ -1,7 +1,7 @@
 ---
 id: module4_function
 title: Function
-sidebar_label: "Module 4: Function"
+sidebar_label: "Function"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

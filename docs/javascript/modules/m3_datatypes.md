@@ -1,7 +1,7 @@
 ---
 id: module3_datatypes
 title: Does type matters 🤔
-sidebar_label: "Module 3: Data Types"
+sidebar_label: "Data Types"
 description: Data types description
 ---
 

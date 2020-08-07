@@ -1,7 +1,7 @@
 ---
 id: module7_destruct
 title: Destructor 🔨
-sidebar_label: "Module 7: Destructor"
+sidebar_label: "Destructor"
 ---
 
 :::note Questions 🤔

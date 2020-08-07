@@ -1,7 +1,7 @@
 ---
 id: module10_generator
 title: Generator and Iterator ⚙️
-sidebar_label: 'Module 10: Generator'
+sidebar_label: 'Generator'
 ---
 
 import CustomText from '../../../src/components/customText/customText.jsx';

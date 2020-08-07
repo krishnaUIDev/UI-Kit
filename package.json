@@ -30,6 +30,7 @@
     "react-dom": "^16.8.4",
     "react-icons": "^3.10.0",
     "react-spring": "^8.0.27",
+    "react-transition-group": "^4.4.1",
     "swr": "^0.2.3",
     "words-to-numbers": "^1.5.1"
   },

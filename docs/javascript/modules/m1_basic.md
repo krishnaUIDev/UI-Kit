@@ -1,7 +1,7 @@
 ---
 id: module1_basic
 title: Basic is the foundation of all programming language 😇
-sidebar_label: 'Module 1: Basics'
+sidebar_label: 'Basics'
 ---
 
 import BulletSentence from '../../../src/components/bulletSentence/bulletSentnce.jsx';
@@ -36,33 +36,33 @@ A variable can be declared as `var` or `let`. But even if we declare the variabl
 ```ts
 // var accessibility
 if (true) {
-  var superHero = 'Super Man 🦸🏻‍♂️'
+  var superHero = 'Super Man 🦸🏻‍♂️';
 }
 
-console.log(superHero) // Super Man 🦸🏻‍♂️
+console.log(superHero); // Super Man 🦸🏻‍♂️
 // The Variable scope still present outside the function block as well
 
 // let accessibility
 if (true) {
-  let superHero = 'Super Man 🦸🏻‍♂️'
+  let superHero = 'Super Man 🦸🏻‍♂️';
 }
 
-console.log(superHero) // Error ❌, undefined
+console.log(superHero); // Error ❌, undefined
 // let scope is restricted to the block
 ```
 
 If a code block is inside a function then the scope will remain to the function level
 
 ```js
-function IAmIronMan () {
+function IAmIronMan() {
   if (true) {
-    var isHeIronMan = true
+    var isHeIronMan = true;
   }
-  console.log(isHeIronMan)
+  console.log(isHeIronMan);
 }
 
-IAmIronMan() // true ✅
-console.log(isHeIronMan) // ReferenceError: isHeIronMan is not defined
+IAmIronMan(); // true ✅
+console.log(isHeIronMan); // ReferenceError: isHeIronMan is not defined
 ```
 
 If `var` declared outside any function or block that instance will be assigned to the global object. which means a `window` object inside the browser and `global` object in the node
@@ -71,31 +71,31 @@ If `var` declared outside any function or block that instance will be assigned t
 
 ```js
 // var ignore and replace the old value with a new one
-var superHero = 'Iron Man'
-var superHero = 'Batman' // Works pretty fine
+var superHero = 'Iron Man';
+var superHero = 'Batman'; // Works pretty fine
 
 // let is very arrogant
-let superHero = 'Iron Man'
-let superHero = 'Batman' // SyntaxError: Identifier 'superHero' has already been declared
+let superHero = 'Iron Man';
+let superHero = 'Batman'; // SyntaxError: Identifier 'superHero' has already been declared
 ```
 
 🔸 `var` variable(s) can be declared below their use
 
 ```js
 // Example 1
-function whoAmI () {
-  superHero = 'Iron Man'
-  console.log(superHero)
-  var superHero // declaration is done after initialization 🛎
+function whoAmI() {
+  superHero = 'Iron Man';
+  console.log(superHero);
+  var superHero; // declaration is done after initialization 🛎
 }
 
 // Example 2
-function whoAmI () {
-  superHero = 'Hulk'
+function whoAmI() {
+  superHero = 'Hulk';
   if (true) {
-    var superHero // declaration is done after initialization 🛎
+    var superHero; // declaration is done after initialization 🛎
   }
-  console.log(superHero)
+  console.log(superHero);
 }
 ```
 
@@ -111,15 +111,15 @@ This behavior is called `Hoisting` (Raising) where all `var` is hoisted at the g
 🔸 **let** has a sensible scoping. Once the scope is declared the scope will remain in its block <br/> 🔸 **let** don't allow re-declaration
 
 ```js
-let superHero = 'Iron Man'
-let superHero = 'Batman' // SyntaxError: Identifier 'superHero' has already been declared
+let superHero = 'Iron Man';
+let superHero = 'Batman'; // SyntaxError: Identifier 'superHero' has already been declared
 ```
 
 🔸 If we declare variable with **let** it will not be attached to the global scope hence it will not be reachable outside the file <br/> 🔸 **let** in the loop can re-bind in each iteration making sure to reassign the value from the end of the previous iteration
 
 ```js
 for (let i = 0; i < 5; i++) {
-  console.log(i) // print 0,1,2,3,4
+  console.log(i); // print 0,1,2,3,4
 }
 ```
 
@@ -135,15 +135,15 @@ What the heck 🤯 how is that even working when let won't allow re-assignment �
 const marvelHero = {
   heroName: 'Iron Man',
   actorName: 'Robert, Jr.',
-}
+};
 
-marvelHero = {} // can't assign to marvelHero because its constant
+marvelHero = {}; // can't assign to marvelHero because its constant
 
-marvelHero.characterName = 'Tony Stark' // Assigning new property to an object
+marvelHero.characterName = 'Tony Stark'; // Assigning new property to an object
 
-delete marvelHero.heroName // Deleting { heroName: "Iron Man",}
+delete marvelHero.heroName; // Deleting { heroName: "Iron Man",}
 
-console.log(marvelHero) // { actorName: "Robert, Jr.", characterName: "Tony Stark" }
+console.log(marvelHero); // { actorName: "Robert, Jr.", characterName: "Tony Stark" }
 ```
 
 :::info Pro Tip 💡 If we try to read or write `let` or `const` variable before its declaration and initialization an error will raise. This phenomenon is called `Temporal Dead Zone` or `TDZ` :::
@@ -157,16 +157,16 @@ In the ES6 module system, strict mode is turned on by default. `use strict` is a
 🔸In early javascript, it was allowed to use write code however we want
 
 ```js
-year = 2020
-console.log(year) // 2020, print the result even if you don't declare
+year = 2020;
+console.log(year); // 2020, print the result even if you don't declare
 ```
 
 but when you use strict mode at the top of the strict it's not possible to write code however we want
 
 ```js
-'use strict'
-year = 2020
-console.log(year) // 'year' is not declared
+'use strict';
+year = 2020;
+console.log(year); // 'year' is not declared
 ```
 
 🔸Strict mode will help to prevent the unexpected errors, exception which can arise during runtime of the application<br/> 🔸**use strict** is very helpful to avoid a conflict between variables. If we missed declaring it will notify a developer
@@ -192,7 +192,7 @@ Both == and === operator serve the same purpose which is to check the object equ
 🔸== is operator is very loose. It only care about a content even if type is mismatch it wont boughter
 
 ```js
-'4' == 4 // return  true
+'4' == 4; // return  true
 ```
 
 Behind the scene, javascript convert the string into a number and the equate them this is called `COERCION`
@@ -202,8 +202,8 @@ Behind the scene, javascript convert the string into a number and the equate the
 🔸 === is super strict. It want both content and type should equal
 
 ```js
-'4' === 4 // return  false
-'4' === '4' // return true
+'4' === 4; // return  false
+'4' === '4'; // return true
 ```
 
 :::info Recommendation Always prefer to use `===` instead of `==` because `==` is fickle and quickly leads to hidden bugs :::

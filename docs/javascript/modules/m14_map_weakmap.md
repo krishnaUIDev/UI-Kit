@@ -1,7 +1,7 @@
 ---
 id: module14_map_weakmap
 title: Map and WeakMap
-sidebar_label: "Module 14: Map and WeakMap"
+sidebar_label: "Map and WeakMap"
 ---
 
 import CustomText from '../../../src/components/customText/customText.jsx';
