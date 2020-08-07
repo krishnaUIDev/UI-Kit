@@ -5,7 +5,7 @@ export interface Props {
   keyword: string;
 }
 
-function BulletSentence({children, keyword}: Props) {
+function BulletSentence(props: Props) {
   return (
     <p style={{fontSize: '22px', margin: '0'}}>
       <span
@@ -18,9 +18,9 @@ function BulletSentence({children, keyword}: Props) {
           color: 'white',
           paddingBottom: '2px',
         }}>
-        {keyword}:
+        {props.keyword}:
       </span>{' '}
-      {children}
+      {props.children}
     </p>
   );
 }

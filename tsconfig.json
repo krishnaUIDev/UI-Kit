@@ -5,7 +5,8 @@
     "jsx": "react",
     "lib": ["DOM"],
     "noEmit": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "experimentalDecorators": true
   },
   "include": ["src/"]
 }

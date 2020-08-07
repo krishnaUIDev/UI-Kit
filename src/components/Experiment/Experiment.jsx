@@ -3,7 +3,12 @@ import './Experiment.css';
 import {TransitionGroup} from 'react-transition-group';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-export function Toggle(props) {
+interface ToggleProps {
+  hidden: boolean;
+  children: node;
+}
+
+export function Toggle(props: ToggleProps) {
   return (
     <div>
       <ReactCSSTransitionGroup

@@ -1,12 +1,13 @@
 import * as React from 'react';
 import styles from './styles.module.css';
 
-export interface Props {
+interface Props {
   item: string;
   link: string;
 }
 
-export default function GlowBulletList({item, link}) {
+export default function GlowBulletList(props: Props) {
+  const {item, link} = props;
   return (
     <div className={styles.masterDiv}>
       <span className={styles.blob} />
