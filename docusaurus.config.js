@@ -15,6 +15,8 @@ module.exports = {
     announcementBar: {
       id: 'underconstruction',
       content: '⭐️ This website is under construction  ⭐️',
+      backgroundColor: 'linear-gradient(45deg, #00ae7b, #0081bf)', // Defaults to `#fff`.
+      textColor: '#fff',
     },
     prism: {
       theme: require('prism-react-renderer/themes/dracula'),
@@ -129,6 +131,8 @@ module.exports = {
         docs: {
           homePageId: 'introduction',
           sidebarPath: require.resolve('./sidebars.tsx'),
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
