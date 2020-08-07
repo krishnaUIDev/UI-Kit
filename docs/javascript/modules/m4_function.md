@@ -113,8 +113,6 @@ helloDeveloper("This is sample arguments"); // Arguments ["This is sample argume
 
 `rest` parameter lets you collect all the arguments of the function call into an array.
 
-Learn more about rest operator from this [link](module8_destruct#rest-operator)
-
 ```js
 let developerInfo = (...args) => consol.log(`Hi there i am ${args[0]}, I am from ${args[1]}`);
 developerInfo("Abhin Pai",  "India");

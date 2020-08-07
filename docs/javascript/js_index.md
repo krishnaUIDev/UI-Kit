@@ -39,11 +39,11 @@ description: Javascript Interview preparation material
 
 ---
 
-- ✅ Brief insight about data types [🔗](modules/m3_datatypes)
-- ✅ Template Literals / String Interpolation [🔗](modules/m3_datatypes#template-literals---expression-interpolation)
-- ✅ Array and its methods [🔗](modules/m3_datatypes#1-array)
-- ✅ String and its methods [🔗](modules/m3_datatypes#6-string)
-- ✅ `Undefined` and `Null` [🔗](modules/m3_datatypes#4-null)
+- ✅ Brief insight about data types [🔗]
+- ✅ Template Literals / String Interpolation [🔗]
+- ✅ Array and its methods [🔗]
+- ✅ String and its methods [🔗]
+- ✅ `Undefined` and `Null` [🔗]
 - ✅ Symbols
 - ❌ Date 📅
 - ❌ JSONP and JSON methods
