@@ -113,8 +113,8 @@ module.exports = {
       anonymizeIP: true, // Should IPs be anonymized?
     },
     algolia: {
-      apiKey: 'be3d58e5001e0becb68cd83f0914980f',
-      indexName: 'runlet',
+      apiKey: '9331e1d3a32f2c460a05963151c46699',
+      indexName: 'krishnauidev_ui-kit',
       appId: '57UV1WGQ5Q',
     },
   },
