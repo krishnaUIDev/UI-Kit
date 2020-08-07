@@ -115,7 +115,6 @@ module.exports = {
     algolia: {
       apiKey: '9331e1d3a32f2c460a05963151c46699',
       indexName: 'krishnauidev_ui-kit',
-      appId: '57UV1WGQ5Q',
     },
   },
   plugins: ['docusaurus-plugin-sass', '@docusaurus/plugin-ideal-image'],
