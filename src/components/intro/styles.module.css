@@ -1,0 +1,29 @@
+.namaste {
+  font-size: 30px;
+}
+
+.paddingTop {
+  padding-top: 2rem;
+}
+
+.intoMsg {
+  display: block;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: calc(16px + 1vw);
+}
+
+.twitterNamespace {
+  color: #02beff;
+}
+
+.twitterNamespace:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 622px) {
+  .namaste {
+    font-size: 50px;
+  }
+}
