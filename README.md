@@ -1,29 +1,37 @@
-### Installation
+#### Technologies Used for Front End
 
-```
-$ yarn
-```
+---
 
-### Local Development
+- ⚛️ React⚙️: A light weight front end library
 
-```
-$ yarn start
-```
+- 🌀 Material UI: Cool CSS framework
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+- 💻 Firebase Hosting: Hosting platform by Google
 
-### Build
+- ⚙️ Github Action: A versatile CI-CD tool
 
-```
-$ yarn build
-```
+- Netlify: For deployment
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+- 📓 Docusarus: Template Engine
 
-### Deployment
+- TypeScript and Javascript
 
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
+---
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+#### Technologies Used for Back End
+
+- NodeJS
+
+- Express
+
+- Joi
+
+- Mongoose
+
+- MongoDB
+
+- Pug
+
+- Redis
+
+- Nodemailer
