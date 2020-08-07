@@ -3,7 +3,12 @@ import * as React from 'react';
 import './Collapsible.scss';
 import {CSSTransition} from 'react-transition-group';
 
-const Collapsible = ({children, title}) => {
+interface Props {
+  children: node;
+  title: String;
+}
+const Collapsible = (props: Props) => {
+  const {children, title} = props;
   const [collapse, setCollapse] = React.useState<boolean>(false);
   const [headerStyle, setHeaderStyle] = React.useState<string>(
     'header round-header',
