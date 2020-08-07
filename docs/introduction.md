@@ -4,7 +4,7 @@ title: ' '
 sidebar_label: Introduction
 ---
 
-import Intro from '../src/components/intro/intro.jsx';
+import Intro from '../src/components/intro/intro.tsx';
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

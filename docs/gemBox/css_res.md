@@ -1,10 +1,10 @@
 ---
 id: css_res
-title: CSS Resources 
+title: CSS Resources
 sidebar_label: CSS Resources
 ---
 
-import GB from '../../src/components/glowBulletList/glowBulletList.jsx';
+import GB from '../../src/components/glowBulletList/glowBulletList.tsx';
 
 ### ⏱ Animation Libraries
 

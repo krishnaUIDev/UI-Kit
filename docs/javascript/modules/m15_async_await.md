@@ -4,7 +4,7 @@ title: A story of Async and Await 🥰
 sidebar_label: 'Async Await'
 ---
 
-import CustomText from '../../../src/components/customText/customText.jsx';
+import CustomText from '../../../src/components/customText/customText.tsx';
 
 :::note Questions 🤔
 

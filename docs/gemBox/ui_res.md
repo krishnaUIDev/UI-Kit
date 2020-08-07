@@ -4,7 +4,7 @@ title: 🎨 UI Resources 🖍
 sidebar_label: UI Resources
 ---
 
-import GB from '../../src/components/glowBulletList/glowBulletList.jsx';
+import GB from '../../src/components/glowBulletList/glowBulletList.tsx';
 
 ### 🖼️ Frontend Challenge Websites
 
@@ -59,18 +59,10 @@ import GB from '../../src/components/glowBulletList/glowBulletList.jsx';
 <GB link="http://uimovement.com" item="uimovement"/>
 <GB link="http://uigarage.net" item="uigarage"/>
 <GB link="http://collectui.com" item="collectui"/>
- 
+
 
 ### 📊 Charts / Data Visualization
 
 <GB link="" item="Chart.js"/>
 <GB link="" item="D3.js"/>
 <GB link="" item="three.js"/>
-
-
-
-
-
- 
- 
- 

@@ -4,7 +4,7 @@ title: Basic is the foundation of all programming language 😇
 sidebar_label: 'Basics'
 ---
 
-import BulletSentence from '../../../src/components/bulletSentence/bulletSentnce.jsx';
+import BulletSentence from '../../../src/components/bulletSentence/bulletSentnce.tsx';
 
 :::note Questions 🤔
 

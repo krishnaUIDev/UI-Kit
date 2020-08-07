@@ -4,7 +4,7 @@ title: Promises its super cool 😎
 sidebar_label: 'Promise'
 ---
 
-import Story from '../../../src/components/story/story.jsx'; import CustomText from '../../../src/components/customText/customText.jsx';
+import Story from '../../../src/components/story/story.jsx'; import CustomText from '../../../src/components/customText/customText.tsx';
 
 :::note Questions 🤔
 
@@ -76,24 +76,24 @@ Finally, we achieved what we were looking for but isn't it messy. If we have som
 
 ```js
 // highlight-start
-function myCallback (arg) {
-  console.log('Hey did you called me ' + arg)
+function myCallback(arg) {
+  console.log('Hey did you called me ' + arg);
 }
 // highlight-end
 
-function asyncFunction (arg, callback) {
-  console.log(arg)
+function asyncFunction(arg, callback) {
+  console.log(arg);
 
   // highlight-start
   setTimeout(() => {
-    console.log('I am timed out'), 0
-  })
-  let x = () => callback('🤔')
-  x()
+    console.log('I am timed out'), 0;
+  });
+  let x = () => callback('🤔');
+  x();
   // highlight-end
 }
 
-asyncFunction('Trying callback', myCallback)
+asyncFunction('Trying callback', myCallback);
 
 //  Trying callback
 //  Hey did you called me 🤔
@@ -127,7 +127,7 @@ The basic syntax of the promise looks something like this
 ```js
 let myPromise = new Promise((resolve, reject) => {
   // Promise body that is "executor"
-})
+});
 ```
 
 The function passed to the new Promise is called the executor. Which run and produce some results eventually.
@@ -147,10 +147,10 @@ In the above example, `myPromise` is an object obtained by Promise constructor. 
 
 ```js
 let myPromise = new Promise((resolve, reject) => {
-  resolve('I am done')
-  resolve('Done and dusted') // ignored
-  reject(new Error('I stuck')) // ignored
-})
+  resolve('I am done');
+  resolve('Done and dusted'); // ignored
+  reject(new Error('I stuck')); // ignored
+});
 ```
 
 - resolve and reject method accept only one argument or none arguments
@@ -171,17 +171,17 @@ In the above callback section, we try to demonstrate a bicycle manufacturing pro
 Let's try to achieve the above solution using Promise chaining
 
 ```js
-function handleError (err) {
-  throw new Error(err)
+function handleError(err) {
+  throw new Error(err);
 }
 
 let designBiCycle = new Promise((resolve, reject) => {
   try {
-    resolve('loadDesign.js')
+    resolve('loadDesign.js');
   } catch (ex) {
-    reject(new Error(ex))
+    reject(new Error(ex));
   }
-})
+});
 
 designBiCycle
   .then((design) => constructFrame(design))
@@ -190,7 +190,7 @@ designBiCycle
   .then((parts) => testingBicycle(parts))
   .then((testing) => releaseBicycle(testing))
   .then((release) => console.log('Successfully manufactured Bicycle'))
-  .catch((err) => handleError(err))
+  .catch((err) => handleError(err));
 ```
 
 Look now how beautifully 😍 we can write code and achieve same requirement using Promise Chaining this is `Promise Heaven` 😂

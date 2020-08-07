@@ -4,7 +4,7 @@ title: 🦸🏻‍♂️ Javascript Questions
 sidebar_label: 'Javascript'
 ---
 
-import CB from '../../src/components/customText/customText.jsx';
+import CB from '../../src/components/customText/customText.tsx';
 
 import Collapsible from '../../src/components/collapsible/Collapsible.jsx';
 
@@ -106,20 +106,20 @@ Whenever a function is declared in JavaScript a **closure** is created. inside t
 
 ```js
 // global scope
-var e = 10
-function sum (a) {
+var e = 10;
+function sum(a) {
   return function (b) {
     return function (c) {
       // outer functions scope
       return function (d) {
         // local scope
-        return a + b + c + d + e
-      }
-    }
-  }
+        return a + b + c + d + e;
+      };
+    };
+  };
 }
 
-console.log(sum(1)(2)(3)(4)) // log 20
+console.log(sum(1)(2)(3)(4)); // log 20
 ```
 
 **I came across great post on closure** please refer this to understand more [link](https://stackoverflow.com/questions/111102/how-do-javascript-closures-work)
@@ -132,34 +132,34 @@ console.log(sum(1)(2)(3)(4)) // log 20
 
 ```js
 var counter = (function () {
-  var privateCounter = 0
-  function changeBy (val) {
-    privateCounter += val
+  var privateCounter = 0;
+  function changeBy(val) {
+    privateCounter += val;
   }
 
   return {
     increment: function () {
-      changeBy(1)
+      changeBy(1);
     },
 
     decrement: function () {
-      changeBy(-1)
+      changeBy(-1);
     },
 
     value: function () {
-      return privateCounter
+      return privateCounter;
     },
-  }
-})()
+  };
+})();
 
-console.log(counter.value()) // 0.
+console.log(counter.value()); // 0.
 
-counter.increment()
-counter.increment()
-console.log(counter.value()) // 2.
+counter.increment();
+counter.increment();
+console.log(counter.value()); // 2.
 
-counter.decrement()
-console.log(counter.value()) // 1.
+counter.decrement();
+console.log(counter.value()); // 1.
 ```
 
 ### 🔸 What are the consideration that we need to avoid while working with closure
@@ -559,22 +559,22 @@ let range = {
   from: 1,
   to: 10,
 
-  [Symbol.iterator] () {
+  [Symbol.iterator]() {
     return {
       current: this.from,
       last: this.to,
-      next () {
+      next() {
         if (this.current < this.last) {
-          return {done: false, value: this.current++}
+          return {done: false, value: this.current++};
         } else {
-          return {done: true}
+          return {done: true};
         }
       },
-    }
+    };
   },
-}
+};
 
-console.log([...range]) // [1,2,3,4,5,6,7,8,9]
+console.log([...range]); // [1,2,3,4,5,6,7,8,9]
 ```
 
 Now the above can be simplified using generator
@@ -583,14 +583,14 @@ Now the above can be simplified using generator
 let range = {
   from: 1,
   to: 10,
-  * [Symbol.iterator] () {
+  *[Symbol.iterator]() {
     for (let i = this.from; i < this.to; i++) {
-      yield i
+      yield i;
     }
   },
-}
+};
 
-console.log([...range])
+console.log([...range]);
 ```
 
 2. Better Async functionality
@@ -598,30 +598,30 @@ console.log([...range])
 Code using promises and callbacks such as
 
 ```js
-function fetchJson (url) {
+function fetchJson(url) {
   return fetch(url)
     .then((request) => request.text())
     .then((text) => {
-      return JSON.parse(text)
+      return JSON.parse(text);
     })
     .catch((error) => {
-      console.log(`ERROR: ${error.stack}`)
-    })
+      console.log(`ERROR: ${error.stack}`);
+    });
 }
 ```
 
 can be written as (with the help of libraries such as `co.js`) which uses the generator
 
 ```js
-const fetchJson = co.wrap(function * (url) {
+const fetchJson = co.wrap(function* (url) {
   try {
-    let request = yield fetch(url)
-    let text = yield request.text()
-    return JSON.parse(text)
+    let request = yield fetch(url);
+    let text = yield request.text();
+    return JSON.parse(text);
   } catch (error) {
-    console.log(`ERROR: ${error.stack}`)
+    console.log(`ERROR: ${error.stack}`);
   }
-})
+});
 ```
 
 There are more applications of generators like
@@ -869,14 +869,14 @@ A `bind()` using ES6 looks something like this
 let userInfo = {
   name: 'Abhin',
   nationality: 'India 🇮🇳',
+};
+
+function displayDetails() {
+  console.log(`${arguments[0]} ${this.name} from ${this.nationality}`);
 }
 
-function displayDetails () {
-  console.log(`${arguments[0]} ${this.name} from ${this.nationality}`)
-}
-
-let display = displayDetails.bind(userInfo, 'Hello')
-display() // Hello Abhin from India 🇮🇳
+let display = displayDetails.bind(userInfo, 'Hello');
+display(); // Hello Abhin from India 🇮🇳
 ```
 
 Now the **Polyfill** for the **bind** will look something like this
@@ -885,21 +885,21 @@ Now the **Polyfill** for the **bind** will look something like this
 let userInfo = {
   name: 'Abhin',
   nationality: 'India 🇮🇳',
-}
+};
 
-function displayDetails () {
-  console.log(`${arguments[0]} ${this.name} from ${this.nationality}`)
+function displayDetails() {
+  console.log(`${arguments[0]} ${this.name} from ${this.nationality}`);
 }
 
 Function.prototype.myBind = function (context, ...arg) {
-  let fn = this
+  let fn = this;
   return function () {
-    fn.apply(context, [...arg])
-  }
-}
+    fn.apply(context, [...arg]);
+  };
+};
 
-let display = displayDetails.myBind(userInfo, 'Hello')
-display() // Hello Abhin from India 🇮🇳
+let display = displayDetails.myBind(userInfo, 'Hello');
+display(); // Hello Abhin from India 🇮🇳
 ```
 
 Here the highlighted code is a `polyfill for bind` which does same things as native `bind`
@@ -952,56 +952,56 @@ Here the highlighted code is a `polyfill for bind` which does same things as nat
 The `debounce` function forces a function to wait a certain amount of time before running again. The function is built to limit the number of times a function is called.
 
 ```js
-function debounce (func, wait, immediate) {
-  var timeout // To keep track of when the event occurred
+function debounce(func, wait, immediate) {
+  var timeout; // To keep track of when the event occurred
 
-  return function executedFunction () {
-    var context = this // window / global context
-    var args = arguments // additional arguments it will in array
+  return function executedFunction() {
+    var context = this; // window / global context
+    var args = arguments; // additional arguments it will in array
 
     var later = function () {
-      timeout = null
-      if (!immediate) func.apply(context, args) // looks for condition incase of immediate invocation
-    }
+      timeout = null;
+      if (!immediate) func.apply(context, args); // looks for condition incase of immediate invocation
+    };
 
-    var callNow = immediate && !timeout
+    var callNow = immediate && !timeout;
 
-    clearTimeout(timeout) // clear the previous timeout if any
+    clearTimeout(timeout); // clear the previous timeout if any
 
-    timeout = setTimeout(later, wait)
+    timeout = setTimeout(later, wait);
 
-    if (callNow) func.apply(context, args) // Incase of immediate function invocation
-  }
+    if (callNow) func.apply(context, args); // Incase of immediate function invocation
+  };
 }
 
 var returnedFunction = debounce(function () {
   // The function's code
-}, 250)
+}, 250);
 
-window.addEventListener('resize', returnedFunction)
+window.addEventListener('resize', returnedFunction);
 ```
 
 simplified version of `debounce`
 
 ```js
-function debounce (func, wait) {
-  var timeout
+function debounce(func, wait) {
+  var timeout;
 
   return function () {
-    var context = this // window / global context
-    var args = arguments // additional arguments it will in array
+    var context = this; // window / global context
+    var args = arguments; // additional arguments it will in array
 
-    clearTimeout(timeout) // clear the previous timeout if any
+    clearTimeout(timeout); // clear the previous timeout if any
 
-    timeout = setTimeout(later.apply(context, args), wait)
-  }
+    timeout = setTimeout(later.apply(context, args), wait);
+  };
 }
 
 var returnedFunction = debounce(function () {
   // The function's code
-}, 250)
+}, 250);
 
-window.addEventListener('resize', returnedFunction)
+window.addEventListener('resize', returnedFunction);
 ```
 
 #### Applications of Debouncing
@@ -1015,28 +1015,28 @@ window.addEventListener('resize', returnedFunction)
 Throttling enforces a maximum number of times a function can be called over time. For example, “execute this function at most once every 100 milliseconds.”
 
 ```js
-function debounce (func, wait) {
-  var timeout
-  var flag = true
+function debounce(func, wait) {
+  var timeout;
+  var flag = true;
 
   return function () {
-    var context = this // window / global context
-    var args = arguments // additional arguments it will in array
+    var context = this; // window / global context
+    var args = arguments; // additional arguments it will in array
     if (flag) {
-      later.apply(context, args)
-      flag = false
+      later.apply(context, args);
+      flag = false;
     }
 
-    clearTimeout(timeout) // clear the previous timeout if any
-    timeout = setTimeout(() => (flag = true), wait)
-  }
+    clearTimeout(timeout); // clear the previous timeout if any
+    timeout = setTimeout(() => (flag = true), wait);
+  };
 }
 
 var returnedFunction = debounce(function () {
   // The function's code
-}, 250)
+}, 250);
 
-window.addEventListener('resize', returnedFunction)
+window.addEventListener('resize', returnedFunction);
 ```
 
 #### Applications of Throttling

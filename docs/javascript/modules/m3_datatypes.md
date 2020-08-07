@@ -5,7 +5,7 @@ sidebar_label: "Data Types"
 description: Data types description
 ---
 
-import CustomText from '../../../src/components/customText/customText.jsx'
+import CustomText from '../../../src/components/customText/customText.tsx'
 
 :::note Questions 🤔
   1. Does JS have any type or is it strongly typed?

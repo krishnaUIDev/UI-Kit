@@ -1,8 +1,13 @@
-import React from 'react';
+import * as React from 'react';
 
-export default function BulletSentence({ children, keyword }) {
+export interface Props {
+  children: node;
+  keyword: string;
+}
+
+function BulletSentence({children, keyword}: Props) {
   return (
-    <p style={{ fontSize: '22px', margin: '0' }}>
+    <p style={{fontSize: '22px', margin: '0'}}>
       <span
         style={{
           backgroundColor: '#0090d9',
@@ -12,11 +17,12 @@ export default function BulletSentence({ children, keyword }) {
           paddingRight: '6px',
           color: 'white',
           paddingBottom: '2px',
-        }}
-      >
+        }}>
         {keyword}:
       </span>{' '}
       {children}
     </p>
   );
 }
+
+export default BulletSentence;

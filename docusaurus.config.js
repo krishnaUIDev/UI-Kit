@@ -12,6 +12,10 @@ module.exports = {
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
+    announcementBar: {
+      id: 'underconstruction',
+      content: '⭐️ This website is under construction  ⭐️',
+    },
     prism: {
       theme: require('prism-react-renderer/themes/dracula'),
       darkTheme: require('prism-react-renderer/themes/dracula'),

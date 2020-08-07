@@ -1,8 +1,10 @@
-import React from 'react'
-import classnames from 'classnames'
-import styles from './styles.module.css'
+import * as React from 'react';
+import classnames from 'classnames';
+import styles from './styles.module.css';
 
-export default function Intro () {
+export interface Props {}
+
+export default function Intro() {
   return (
     <div>
       <h6 className={styles.namaste}>
@@ -10,8 +12,8 @@ export default function Intro () {
       </h6>
       <p className={styles.intoMsg} style={{paddingTop: '1rem'}}>
         <a
-          href='https://github.com/krishnaUIDev'
-          target='_blank'
+          href="https://github.com/krishnaUIDev"
+          target="_blank"
           className={styles.twitterNamespace}>
           @Krishna
         </a>{' '}
@@ -27,13 +29,13 @@ export default function Intro () {
         If you find these content useful and want to appreciate my work then
         please reach me out{' '}
         <a
-          href='https://github.com/krishnaUIDev'
-          target='_blank'
+          href="https://github.com/krishnaUIDev"
+          target="_blank"
           className={styles.twitterNamespace}>
           @Krishna
         </a>
       </p>
       <p></p>
     </div>
-  )
+  );
 }
