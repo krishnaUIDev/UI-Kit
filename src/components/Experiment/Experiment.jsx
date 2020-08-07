@@ -1,34 +1,30 @@
-import React from "react";
-import "./Experiment.css";
-import { TransitionGroup } from "react-transition-group";
-// var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
-import ReactCSSTransitionGroup  from 'react-addons-css-transition-group';
+import React from 'react';
+import './Experiment.css';
+import {TransitionGroup} from 'react-transition-group';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-export class Toggle extends React.Component {
-  render() {
-    return (
-      <div>
-        <ReactCSSTransitionGroup
-          transitionName="toggle"
-          transitionEnterTimeout={300}
-          transitionLeaveTimeout={300}
-        >
-          {this.props.hidden ? null : (
-            <div key={"sample"} className="toggle-base">
-              {this.props.children}
-            </div>
-          )}
-        </ReactCSSTransitionGroup>
-      </div>
-    );
-  }
+export function Toggle(props) {
+  return (
+    <div>
+      <ReactCSSTransitionGroup
+        transitionName="toggle"
+        transitionEnterTimeout={300}
+        transitionLeaveTimeout={300}>
+        {props.hidden ? null : (
+          <div key={'sample'} className="toggle-base">
+            {props.children}
+          </div>
+        )}
+      </ReactCSSTransitionGroup>
+    </div>
+  );
 }
 
 export default class Experiment extends React.Component {
   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
-    this.state = { hidden: true };
+    this.state = {hidden: true};
   }
 
   onClick() {

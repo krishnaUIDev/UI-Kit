@@ -6,7 +6,7 @@ sidebar_label: 'Javascript'
 
 import CB from '../../src/components/customText/customText.tsx';
 
-import Collapsible from '../../src/components/collapsible/Collapsible.jsx';
+import Collapsible from '../../src/components/collapsible/Collapsible.tsx';
 
 ### 🔸 Are semicolons required in JavaScript?
 

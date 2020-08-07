@@ -1,9 +1,10 @@
-import React from 'react';
+import * as React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-//test
+export interface Props {}
+
 const Versions = () => {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;

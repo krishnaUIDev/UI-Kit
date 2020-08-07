@@ -128,7 +128,7 @@ module.exports = {
       {
         docs: {
           homePageId: 'introduction',
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.tsx'),
         },
         blog: {
           showReadingTime: true,
