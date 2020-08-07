@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 export default function GlowBullet({
   fontWeight,
@@ -65,7 +65,7 @@ export default function GlowBullet({
   );
 }
 
-function GlowChild({ focusWord, highlightWord, highlightWords, childText }) {
+function GlowChild({focusWord, highlightWord, highlightWords, childText}) {
   return (
     <>
       {highlightWords &&

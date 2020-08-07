@@ -1,6 +1,6 @@
 //import React, { useState } from 'react';
 import * as React from 'react';
-import './Collapsible.css';
+import './Collapsible.scss';
 import {CSSTransition} from 'react-transition-group';
 
 const Collapsible = ({children, title}) => {

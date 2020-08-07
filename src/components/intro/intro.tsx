@@ -1,6 +1,6 @@
 import * as React from 'react';
 import classnames from 'classnames';
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 export interface Props {}
 
