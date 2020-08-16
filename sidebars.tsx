@@ -74,6 +74,12 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Mongo',
+      collapsed: true,
+      items: ['mongo/mongo'],
+    },
+    {
+      type: 'category',
       label: 'Git',
       collapsed: true,
       items: ['git/git', 'git/gitignore', 'git/gitcommands'],
