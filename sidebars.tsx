@@ -74,6 +74,77 @@ module.exports = {
     },
     {
       type: 'category',
+      collapsed: true,
+      label: 'React-TypeScript',
+      items: [
+        'React-TypeScript/basic/editor_integration',
+        'React-TypeScript/basic/linting',
+        'React-TypeScript/basic/examples',
+        {
+          Getting_Started: [
+            'React-TypeScript/basic/getting-started/function_components',
+            'React-TypeScript/basic/getting-started/hooks',
+            'React-TypeScript/basic/getting-started/class_components',
+            'React-TypeScript/basic/getting-started/default_props',
+            'React-TypeScript/basic/getting-started/types_or_interfaces',
+            'React-TypeScript/basic/getting-started/basic_type_example',
+            'React-TypeScript/basic/getting-started/react_prop_type_example',
+            'React-TypeScript/basic/getting-started/get_derived_props_from_state',
+            'React-TypeScript/basic/getting-started/forms_and_events',
+            'React-TypeScript/basic/getting-started/context',
+            'React-TypeScript/basic/getting-started/forward_and_create_ref',
+            'React-TypeScript/basic/getting-started/portals',
+            'React-TypeScript/basic/getting-started/error_boundaries',
+            'React-TypeScript/basic/getting-started/concurrent',
+          ],
+        },
+        {
+          Recommended: [
+            'React-TypeScript/basic/recommended/codebases',
+            'React-TypeScript/basic/recommended/resources',
+            'React-TypeScript/basic/recommended/talks',
+          ],
+        },
+        {
+          Troubleshooting: [
+            'React-TypeScript/basic/troubleshooting/types',
+            'React-TypeScript/basic/troubleshooting/operators',
+            'React-TypeScript/basic/troubleshooting/utilities',
+            'React-TypeScript/basic/troubleshooting/non_ts_files',
+            'React-TypeScript/basic/troubleshooting/tsconfig',
+            'React-TypeScript/basic/troubleshooting/official_typings_bugs',
+          ],
+        },
+        {
+          HOC: [
+            'React-TypeScript/hoc/intro',
+            'React-TypeScript/hoc/full_example',
+            'React-TypeScript/hoc/react_hoc_docs',
+            'React-TypeScript/hoc/excluding_props',
+          ],
+        },
+        {
+          Migration: [
+            'React-TypeScript/migration/intro',
+            'React-TypeScript/migration/js_docs',
+            'React-TypeScript/migration/from_js',
+            'React-TypeScript/migration/from_flow',
+          ],
+        },
+        {
+          Advanced: [
+            'React-TypeScript/advanced/intro',
+            'React-TypeScript/advanced/utility_types',
+            'React-TypeScript/advanced/patterns_by_usecase',
+            'React-TypeScript/advanced/patterns_by_version',
+            'React-TypeScript/advanced/misc_concerns',
+            'React-TypeScript/advanced/types_react_api',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: 'Mongo',
       collapsed: true,
       items: ['mongo/mongo'],
