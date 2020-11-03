@@ -67,7 +67,7 @@ function Features() {
           <div className="container">
             <Headline
               category="Features"
-              title="Manage your fleet of devices with ease"
+              title="Manage your development skills with UI-WebKit"
               offset={1}
             />
 
