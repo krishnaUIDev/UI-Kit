@@ -51,7 +51,7 @@ This property is particularly useful if you want to have more than one element o
 
 &nbsp;
 
-More details about Flexbox can be found [here](/css-flexbox)
+More details about Flexbox can be found
 
 ### Grid
 
